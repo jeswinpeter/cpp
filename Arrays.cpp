@@ -13,14 +13,20 @@ int sum_of_elements(int aray[],int size) {
 
 int main() {
     int size; 
-    int array[10];
 
     // Getting user input 
     cout << "Enter the size of array: ";
     cin >> size;
+
+    int array[size];
+    
     cout << "Enter the numbers: ";
     for(int i = 0; i < size; i++){
         cin >> array[i];
+    }
+
+    for(int num : array) {
+        cout << num << "\n";
     }
 
     // Calling function and printing output
